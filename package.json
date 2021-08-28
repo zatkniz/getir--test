@@ -5,7 +5,8 @@
   "scripts": {
     "start": "node ./bin/www",
     "start-watch": "nodemon ./bin/www",
-    "test": "jest"
+    "test": "jest",
+    "init": "cp .env.example .env && git clone https://github.com/nodedock/nodedock.git && cd nodedock && cp env-example .env && docker-compose up -d node nginx"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
